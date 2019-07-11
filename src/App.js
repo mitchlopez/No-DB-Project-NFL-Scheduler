@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import team from "./Components/team";
+import week from "./Components/week";
+import favorites from "./Components/favorites";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    current: "week"
+  };
+
+  renderContent() {
+    if (this.state.current === "week") {
+      return <week />;
+    }
+    if (this.state.current === "team") {
+      return <team />;
+    }
+    if (this.state.current === "favorites") {
+      return <favorites />;
+    }
+    this.setState({ current: "week" });
+  }
+
+  render() {
+    return <div className="content">{this.renderContent()}</div>;
+  }
 }
-
 export default App;
