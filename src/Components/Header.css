@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px black solid; */
+  align-items: center;
+  justify-content: space-between;
+  width: 97vw;
+  height: 50px;
+  background-color: #da2127;
+  color: white;
+  -webkit-text-stroke: 2px #003a73;
+  font-weight: bolder;
+  font-size: 2.2em;
+}
+
+.nfl-logo {
+  height: 101%;
+  background-color: rgb(44, 44, 44);
+}
+
+.left-navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  /* border: 1px white solid; */
+  width: 92vw;
+}

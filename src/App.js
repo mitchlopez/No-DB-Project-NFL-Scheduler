@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import team from "./Components/team";
-import week from "./Components/week";
-import favorites from "./Components/favorites";
+import Team from "./Components/Team";
+import Week from "./Components/Week";
+import Favorites from "./Components/Favorites";
+import Header from "./Components/Header";
+import "./index.css";
 
 class App extends Component {
   state = {
@@ -10,19 +12,38 @@ class App extends Component {
 
   renderContent() {
     if (this.state.current === "week") {
-      return <week />;
+      return <Week />;
     }
     if (this.state.current === "team") {
-      return <team />;
+      return <Team />;
     }
     if (this.state.current === "favorites") {
-      return <favorites />;
+      return <Favorites />;
     }
     this.setState({ current: "week" });
   }
 
+  changeToWeek = () => {
+    this.setState({ current: "week" });
+  };
+  changeToTeam = () => {
+    this.setState({ current: "team" });
+  };
+  changeToFavorites = () => {
+    this.setState({ current: "favorites" });
+  };
+
   render() {
-    return <div className="content">{this.renderContent()}</div>;
+    return (
+      <div className="body">
+        <Header
+          changeWeek={this.changeToWeek}
+          changeTeam={this.changeToTeam}
+          changeFavorites={this.changeToFavorites}
+        />
+        <div className="content">{this.renderContent()}</div>
+      </div>
+    );
   }
 }
 export default App;
