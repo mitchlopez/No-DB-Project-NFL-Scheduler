@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./week.css";
 import axios from "axios";
+import "./week.css";
 import Button from "./Button";
 import WeeklyTeamReturns from "./WeeklyTeamReturns";
 
