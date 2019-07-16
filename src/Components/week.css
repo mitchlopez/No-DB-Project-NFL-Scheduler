@@ -8,7 +8,87 @@
 }
 
 .input-week-number {
-  width: 265px;
+  width: 253px;
   height: 25px;
   border-radius: 10px;
+}
+.long {
+  width: 280px;
+}
+
+.games {
+  display: flex;
+  /* border: 1px black solid; */
+  flex-direction: column;
+  margin-top: 15px;
+  width: 40%;
+  min-width: 200px;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+.team-item {
+  margin: 7px;
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+}
+
+.team-logo {
+  display: flex;
+  height: auto;
+  width: 40vw;
+  min-width: 145px;
+}
+
+.team-from-name {
+  font-size: 3vw;
+  min-width: 320px;
+  margin-right: -40px;
+}
+
+.logo-and-name {
+  display: flex;
+  margin-left: 0vw;
+  align-items: center;
+  margin-left: -30px;
+}
+
+.week-display {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  width: 100%;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  min-width: 381px;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 10px;
+  min-width: 381px;
+}
+
+.cover-up {
+  position: absolute;
+  height: 25em;
+  width: auto;
+  left: 22%;
+  top: 20%;
+}
+
+.team-text {
+  display: flex;
+  flex-direction: column;
 }

@@ -2,7 +2,6 @@ import React from "react";
 import "./Header.css";
 
 const Header = props => {
-  console.log(props);
   return (
     <header className="navbar">
       <div className="left-navbar">
@@ -13,7 +12,7 @@ const Header = props => {
           Team
         </a>
         <a className="favorites" onClick={props.changeFavorites}>
-          Favorites
+          Favorite Games
         </a>
       </div>
       <img

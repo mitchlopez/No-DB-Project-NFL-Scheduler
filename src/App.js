@@ -4,6 +4,7 @@ import Week from "./Components/Week";
 import Favorites from "./Components/Favorites";
 import Header from "./Components/Header";
 import "./index.css";
+import "./reset.css";
 
 class App extends Component {
   state = {
